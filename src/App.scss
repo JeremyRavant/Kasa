@@ -1,0 +1,13 @@
+@import '../src/scss/variables.scss';
+
+
+.body {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-inline: 0rem;
+    font-family: $font-primary;
+}
+
+main {
+    padding-inline: 3rem;
+}

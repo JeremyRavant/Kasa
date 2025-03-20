@@ -1,0 +1,45 @@
+@import "../src/scss/variables.scss";
+
+.description__panel {
+    margin-bottom: 1rem;
+    flex-basis: 50%;
+    height: auto;
+    p {
+        margin-block: 0;
+    }
+    overflow: hidden;
+    .description__header {
+        background-color: $color-primary;
+        color: $color-tertiary;
+        padding: 0.2em 1em;
+        border-radius: 0.7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    }
+    .description__content {
+        background-color: $grid-background-dark;
+        padding: 1rem;
+        border-radius: 0.7rem;
+        position: relative;
+        top: -0.3rem;
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        max-height: 0;
+        overflow: hidden;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    }
+    
+    .visible {
+        opacity: 1;
+        transform: scaleY(1);
+        max-height: 500px;
+        z-index: -1;
+    }
+    
+}

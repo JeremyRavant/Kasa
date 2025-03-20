@@ -1,6 +1,8 @@
+@import "../src/scss/variables.scss";
+
 .footer {
     height: 209px;
-    background-color: black;
+    background-color: $footer-background-color;
     padding: 20px;
     text-align: center;
     display: grid;
@@ -8,5 +10,5 @@
 }
 
 .footerText {
-    color: white;
+    color: $color-tertiary;
 }

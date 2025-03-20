@@ -1,0 +1,25 @@
+@import "../scss/variables.scss";
+
+.about__container {
+    padding-inline: 3rem;
+}
+
+.image__banner {
+    content: "";
+    background-image: url(../assets/Background2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+    height: 180px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    img {
+        width: 100%;
+    }
+}
+
+

@@ -1,0 +1,80 @@
+@import "../scss/variables.scss";
+
+
+.logo {
+    & img {
+        width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+        width: 145px;
+    }
+}
+
+
+
+.banner {
+    position: relative; 
+    height: 223px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    h1 {
+    position: relative;
+    color: #ffffff; 
+    text-shadow: 
+    -2px -2px 0 black,  
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;  
+    text-align: center;
+    max-width: 1440px;
+    font-size: 48px;
+    font-weight: 700;
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+    }
+    
+  }
+}
+
+.banner::before{
+    content: "";
+    background-image: url('./src/assets/Background.png');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;;
+    background-position: center;
+    border-radius: 2rem;
+    background-blend-mode: hard-light;
+    background-color: black;
+}
+
+.list {
+    background-color: $grid-background-dark;
+    min-height: 50vh;
+    border-radius: 2rem;
+    padding: 3rem;
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
+    gap: 3rem;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+        background-color: white;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
