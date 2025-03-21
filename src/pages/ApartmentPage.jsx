@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import Logements from "/db.json";
 import ApartmentBanner from "../../components/ApartmentBanner";
 import ApartmentHeader from "../../components/ApartmentHeader";
@@ -9,7 +9,7 @@ function ApartmentPage() {
   const apartment = Logements.find((logement) => logement.id === id);
 
   if (!apartment) {
-    return <p>Problème d'id!</p>;
+    return <Navigate to="/404"/>
   }
 
   return (

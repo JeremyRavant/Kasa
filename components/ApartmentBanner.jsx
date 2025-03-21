@@ -37,7 +37,6 @@ const moveToPrevious = () => {
         <div className='image__container'>
           {pictures.map((picture, i) => (<img key={picture} src={picture} alt="" className={getClassName(i)}></img>
           ))}      
-
       </div>
       <button className="btn btn-next" onClick={moveToPrevious}><i className='fas fa-chevron-right'></i></button>
       <button className="btn btn-previous" onClick={moveToNext}><i className='fas fa-chevron-left'></i></button>
