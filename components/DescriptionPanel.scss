@@ -19,8 +19,22 @@
         i {
             font-size: 2rem;
             cursor: pointer;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            will-change: transform;
         }
+        .fa-chevron-down {
+            transition: transform 0.3s ease-in-out;
+          }
+          
+          .fa-chevron-down.rotated {
+            transform: rotate(180deg);
+          }
+        .fa-solid {
+            transition: transform 0.3s ease-in-out;
+          }
+          
     }
+
     .description__content {
         background-color: $grid-background-dark;
         padding: 1rem;
@@ -43,3 +57,4 @@
     }
     
 }
+
