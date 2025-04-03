@@ -1,6 +1,5 @@
 import React from "react";
 import "./ApartmentCard.scss";
-import { Link } from "react-router-dom";
 
 function Apartment(props) {
   return (
